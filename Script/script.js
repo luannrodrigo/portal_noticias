@@ -1,13 +1,12 @@
 //função para adicionar itens
-function ler(){
-    var elementos = document.getElementById("itens").value; //get the text from a textarea with id text
-    
-   // var itens = elementos.split(""); // split the text using the space as a delimiter
+document.getElementById('btnElementos').onclick = function () {
+	var textElementos = document.getElementById('elementos');
+	
+	var vetElementos = textElementos.split(/\s*;\s*/);
 
- 
-	document.getElementById("ler").onclick = ler; //attach a listener to a button with Id read
- 
+	//for(var i in vetElementos){
+	//	console.log(vetElementos[i]);
+	//}
 
-console.log(elementos);
-
+	console.log(vetElementos.value);
 }
