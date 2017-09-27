@@ -9,6 +9,7 @@
 
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta charset="utf-8"/>
 </head>
 <body>
 
@@ -18,46 +19,43 @@
 			<div class="row">
 				<div class="input-field col s12">
 					<textarea id="elementos" class="materialize-textarea"></textarea>
-					<label>Insira os dados, separados por vírgula. Ex.: 1,2,3,4</label>
-					<input class="waves-effect waves-light btn blue-grey lighten-2" type="button" id="btnElementos" value="População">
-					<input class="waves-effect waves-light btn light-blue darken-4" type="button" id="btnElementos" value="Amostragem">
+		
+					<input class="waves-effect waves-light btn blue-grey lighten-2" type="button" id="btnPopulacao" value="População">
+					
+					<input class="waves-effect waves-light btn light-blue darken-4" type="button" id="btnAmostragem" value="Amostragem">
 				</div>
 
 			</div>
 
 		</form>
 	</div>
-
+<!-- 
 	<div class="row">
-		<div class="col s12 offset-s1">
+		<div class="col s10 offset-s1">
 			<ul id="tabs-swipe-demo" class="tabs">
 				<li class="tab col s2"><a href="#test-swipe-1">Test 1</a></li>
-				<!-- <li class="tab col s2"><a class="active" href="#test-swipe-2">Test 2</a></li> -->
+				<li class="tab col s2"><a class="active" href="#test-swipe-2">Test 2</a></li>
 			</ul>
-			<table>
-				<thead id="test-swipe-1">
-					<tr>
-						<th class="col l2">xi</th>
-						<th class="col l2">fi</th>
-						<th class="col l2">fr%</th>
-						<th class="col l2">F</th>
-						<th class="col s1">F%</th>
-						<th class="col l2">Média(xi*fi)</th>
-						<th class="col l1">Variância</th>
-					</tr>
-					
-				</thead>
-			</table>
-			<!-- 	<div id="test-swipe-2" class="col s2 red">Test 2</div> -->
+<table class="responsive-table bordered">
+	<thead id="test-swipe-1">
+		<tr  class="container">
+			<th class="col s2 m2 l1">xi</th>
+			<th class="col l1 s2 m2">fi</th>
+			<th class="col l1 s2 m2">fr%</th>
+			<th class="col l1 s2 m2">F</th>
+			<th class="col l1 s2 m2">F%</th>
+			<th class="col s2 m2 l2">Média(xi*fi)</th>
+			<th class="col l1">Variância</th>
+		</tr>
+		
+	</thead>
 
-		</div>
-		</div>
+</table>
+ -->
 
-
-
-		<!--Import jQuery before materialize.js-->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="view/js/materialize.min.js"></script>
-		<script src="script.js" type="text/javascript"></script>
-	</body>
-	</html>
+	<!--Import jQuery before materialize.js-->	
+	<script type="text/javascript" src="view/js/materialize.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="view/js/script.js"></script>
+</body>
+</html>
