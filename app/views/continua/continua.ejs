@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="after-box">
+		<div class="values-box">
+			<h6 style="text-align: center; margin-top: 20px;">Média</h6>
+			<h6 style="text-align: center;">{{media}}</h5>
+			</div>
+			<div class="values-box">
+				<h6 style="text-align: center; margin-top: 20px;">Moda</h6>
+				<h6 style="text-align: center;">{{modaSimples}}</h6>
+			</div>
+			<div class="values-box">
+				<h6 style="text-align: center; margin-top: 20px;">Moda King</h6>
+				<h6 style="text-align: center;">{{modaKing}}</h6>
+			</div>
+			<div class="values-box">
+				<h6 style="text-align: center; margin-top: 20px;">Moda Pearson</h6>
+				<h6 style="text-align: center;">{{modaPearson}}</h6>
+			</div>
+			<div class="values-box">
+				<h6 style="text-align: center; margin-top: 20px;">Moda Czuber</h6>
+				<h6 style="text-align: center;">{{modaCzuber}}</h6>
+			</div>
+			<div class="values-box">
+				<h6 style="text-align: center; margin-top: 20px;">Mediana</h6>
+				<h6 style="text-align: center;">{{mediana}}</h6>
+			</div>
+			<div class="values-box">
+				<h6 style="text-align: center; margin-top: 20px;">Desvio padrão</h6>
+				<h6 style="text-align: center;">{{desvio}}</h6>
+			</div>
+			<div class="values-box">
+				<h6 style="text-align: center; margin-top: 20px;">Coeficiente variância</h6>
+				<h6 style="text-align: center;">{{coeficiente}}</h6>
+			</div>
+		</div>
+		<div class="quantitativa-chart" id="continua"></div>
+		<div class="tables-box">
+			<table>
+				<thead>
+					<tr>
+						<th width="100">Classes</th>
+						<th width="100">Frequência</th>
+						<th width="100">Frequência %</th>
+						<th width="100">Frequência acumulada</th>
+						<th width="100">Frequência acumulada %</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in tabelaContinua">
+						<td>{{item.faixa + ' |-- ' + (item.faixa + intervalo)}}</td>
+						<td>{{item.freqFaixa}}</td>
+						<td>{{item.freqRPFaixa.toFixed(2)}}</td>
+						<td>{{item.freqA}}</td>
+						<td>{{item.freqAP.toFixed(2)}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="buttons" style="margin-top: 400px; width: 100%;">
+			<div class="button-group" style="margin-right: auto; margin-left: auto; width: 30%;">
+				<a class="hollow button success" style="width: 50%" ui-sref="home">Menu principal</a>
+				<a class="button success" style="width: 50%;" ui-sref="probabilidades">Probabilidades</a>
+			</div>
+		</div>
+	</body>
+	</html>
